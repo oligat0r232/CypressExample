@@ -2,9 +2,10 @@
 import FormPage from '../../pageobjects/form.page';
 
 context('Assertions', () => {
+    // As each test in this spec file is run on the same page, the page will be opened before each test.
     beforeEach(() => {
-      cy.visit('https://demoqa.com/automation-practice-form')
-      cy.viewport('macbook-15')
+      cy.visit('/automation-practice-form')
+      cy.viewport('macbook-15') // This enlarges the viewport to make sure that the elements that should be displayed on a large screen are.
     })
   
     describe('test form', () => {

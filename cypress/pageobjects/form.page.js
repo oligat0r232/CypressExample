@@ -40,5 +40,11 @@ class FormPage {
     }
     greenBorder = 'rgb(40, 167, 69)'
     redBorder = 'rgb(220, 53, 69)'
+    formSubmitModalTitle() {
+        return cy.get('#example-modal-sizes-title-lg')
+    }
+    modalMobileNumber() {
+        return cy.get('td').contains('Mobile')
+    }
 }
 export default FormPage

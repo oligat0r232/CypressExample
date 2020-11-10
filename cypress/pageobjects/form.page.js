@@ -12,13 +12,13 @@ class FormPage {
         return cy.get('#userEmail')
     }
     maleGenderRadio() {
-        return cy.get('#gender-radio-1')
+        return cy.get('#gender-radio-1').siblings('.custom-control-label')
     }
     femaleGenderRadio() {
-        return cy.get('#gender-radio-2')
+        return cy.get('#gender-radio-2').siblings('.custom-control-label')
     }
     otherGenderRadio() {
-        return cy.get('#gender-radio-3')
+        return cy.get('#gender-radio-3').siblings('.custom-control-label')
     }
     userNumberField() {
         return cy.get('#userNumber')
@@ -27,13 +27,13 @@ class FormPage {
         return cy.get('#dateOfBirthInput')
     }
     sportsCheckbox() {
-        return cy.get('#hobbies-checkbox-1')
+        return cy.get('#hobbies-checkbox-1').siblings('.custom-control-label')
     }
     readingCheckbox() {
-        return cy.get('#hobbies-checkbox-2')
+        return cy.get('#hobbies-checkbox-2').siblings('.custom-control-label')
     }
     musicCheckbox() {
-        return cy.get('#hobbies-checkbox-3')
+        return cy.get('#hobbies-checkbox-3').siblings('.custom-control-label')
     }
     currentAddressField() {
         return cy.get('#currentAddress')
